@@ -1,5 +1,5 @@
 //
-//  NetworkModel.h
+//  JLNetworkModel.h
 //
 //  Version 1.0.0
 //
@@ -10,10 +10,12 @@
 //    서브 클래스 규칙
 //     1. API 규격과 똑같은 이름의 Property를 정의할 것
 //     2. 숫자는 NSNumber를 쓸 것을 추천 (null 체크가 가능)
-
+//
+//  https://github.com/buhikon/JLNetworkModel
+//
 #import <Foundation/Foundation.h>
 
-@interface NetworkModel : NSObject
+@interface JLNetworkModel : NSObject
 
 
 /*!

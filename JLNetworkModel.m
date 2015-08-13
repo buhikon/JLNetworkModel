@@ -1,20 +1,22 @@
 //
-//  NetworkModel.m
+//  JLNetworkModel.m
 //
 //  Version 1.0.0
 //
 //  Created by Joey L. on 8/5/15.
 //  Copyright (c) 2015 Joey L. All rights reserved.
 //
+//  https://github.com/buhikon/JLNetworkModel
+//
 
 #if ! __has_feature(objc_arc)
 #error This file must be compiled with ARC. Either turn on ARC for the project or use -fobjc-arc flag
 #endif
 
-#import "NetworkModel.h"
+#import "JLNetworkModel.h"
 #import <objc/runtime.h>
 
-@implementation NetworkModel
+@implementation JLNetworkModel
 
 - (instancetype)initWithNetworkDict:(NSDictionary *)networkDict
 {
@@ -93,7 +95,7 @@
     
     NSMutableArray *result = [NSMutableArray array];
     for (NSDictionary *networkDict in networkArray) {
-        NetworkModel *model = [[[self class] alloc] initWithNetworkDict:networkDict];
+        JLNetworkModel *model = [[[self class] alloc] initWithNetworkDict:networkDict];
         [result addObject:model];
     }
     
